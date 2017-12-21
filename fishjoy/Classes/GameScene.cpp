@@ -147,6 +147,8 @@ void GameScene::fishWillBeCaught(Fish* fish)
 	{
 		fish->beCaught();
 	}
+	int cost=3*(fishType);
+	alterGold(+cost);
 }
 
 void GameScene::checkOutCollisionBetweenFishesAndFishingNet(Bullet* bullet)
